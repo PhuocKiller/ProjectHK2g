@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36793fa16b8c56d46a9ccf9376672d71, type: 3}
+  m_Name: DumbleDore_Ultimate
+  m_EditorClassIdentifier: 
+  skillName: 8
+  skillType: 2
+  timerTrigger: 4
+  cooldownTime: 30
+  levelManaCosts: 0000000032000000460000005a0000006e000000
+  skillIcon: {fileID: 21300000, guid: b3516fa4d86a48a43a3b327eb6494a6f, type: 3}
+  triggerSoundFX: {fileID: 0}
+  levelDamages: 00000000320000006400000096000000c8000000
+  isPhysicDamage: 0
+  isMakeStun: 1
+  isMakeSlow: 0
+  isMakeSilen: 0
+  timeEffect: 0.5
+  VfxEffect: {fileID: 4974241977427462673, guid: d223d896fbfed854c909e6cee1bedbca, type: 3}
+  info: 

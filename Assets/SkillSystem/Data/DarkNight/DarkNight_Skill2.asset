@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36793fa16b8c56d46a9ccf9376672d71, type: 3}
+  m_Name: DarkNight_Skill2
+  m_EditorClassIdentifier: 
+  skillName: 3
+  skillType: 3
+  timerTrigger: 12
+  cooldownTime: 20
+  levelManaCosts: 000000000a0000000f0000001400000019000000
+  skillIcon: {fileID: 21300000, guid: 95f19cafd6af40448bae1803350b3422, type: 3}
+  triggerSoundFX: {fileID: 0}
+  levelDamages: 000000007d000000c8000000130100005e010000
+  isPhysicDamage: 0
+  isMakeStun: 0
+  isMakeSlow: 0
+  isMakeSilen: 0
+  timeEffect: 0
+  VfxEffect: {fileID: 1477666970011942859, guid: fa2b926f83196634f9137b8a28440e5d, type: 3}
+  info: 
