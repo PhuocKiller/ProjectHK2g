@@ -10703,6 +10703,17 @@ MonoBehaviour:
   - {fileID: 7656987445486467007}
   - {fileID: 5008018405886279575}
   - {fileID: 5232838576839202047}
+  visualRender:
+  - {fileID: 7087213417625486130}
+  - {fileID: 7106604581187614966}
+  - {fileID: 6731622576766189331}
+  - {fileID: 7504369490534634445}
+  - {fileID: 2063170882909652079}
+  - {fileID: 5603548610212430855}
+  - {fileID: 7878793148161001180}
+  teamMaterial:
+  - {fileID: 2100000, guid: ca23f6d7d20e81e4ca45a5f6cce88b62, type: 2}
+  - {fileID: 2100000, guid: 0897b41568b94b4489fc90cc2053fac2, type: 2}
 --- !u!65 &4581940765892146288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15722,7 +15733,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca23f6d7d20e81e4ca45a5f6cce88b62, type: 2}
+  - {fileID: 2100000, guid: 0897b41568b94b4489fc90cc2053fac2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35840,9 +35851,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6549570192308173994}
-  - component: {fileID: 7503166007400697173}
   m_Layer: 0
-  m_Name: Ryan_hoodle
+  m_Name: Melee
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -35870,27 +35880,6 @@ Transform:
   - {fileID: 4303813340385748275}
   m_Father: {fileID: 7635038691538384055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &7503166007400697173
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4044312695861074092}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 0b3da1f3c3be7b14bbbc3e7c0295b0b4, type: 2}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4223910612924098757
 GameObject:
   m_ObjectHideFlags: 0
@@ -46228,7 +46217,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca23f6d7d20e81e4ca45a5f6cce88b62, type: 2}
+  - {fileID: 2100000, guid: 0897b41568b94b4489fc90cc2053fac2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -71229,7 +71218,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca23f6d7d20e81e4ca45a5f6cce88b62, type: 2}
+  - {fileID: 2100000, guid: 0897b41568b94b4489fc90cc2053fac2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76384,7 +76373,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca23f6d7d20e81e4ca45a5f6cce88b62, type: 2}
+  - {fileID: 2100000, guid: 0897b41568b94b4489fc90cc2053fac2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76510,7 +76499,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca23f6d7d20e81e4ca45a5f6cce88b62, type: 2}
+  - {fileID: 2100000, guid: 0897b41568b94b4489fc90cc2053fac2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81621,7 +81610,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca23f6d7d20e81e4ca45a5f6cce88b62, type: 2}
+  - {fileID: 2100000, guid: 0897b41568b94b4489fc90cc2053fac2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

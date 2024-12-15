@@ -175,6 +175,7 @@ MonoBehaviour:
   skillType: 3
   VFXPrefab: {fileID: 0}
   skillStat: {fileID: 11400000, guid: 0eb9fc079a80a1940b3a0ca571be1e6e, type: 2}
+  triggerSoundFX: {fileID: 0}
   OnTriggerEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -525,7 +526,7 @@ GameObject:
   - component: {fileID: 3214477133655583300}
   - component: {fileID: 1597926591097216161}
   m_Layer: 10
-  m_Name: Image
+  m_Name: Ava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -578,7 +579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 2a7dcec21947a914191aec8a379497d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -882,6 +883,7 @@ MonoBehaviour:
   skillType: 0
   VFXPrefab: {fileID: 0}
   skillStat: {fileID: 11400000, guid: 642638219513bb348ad4c78be9c7afcc, type: 2}
+  triggerSoundFX: {fileID: 0}
   OnTriggerEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -1758,7 +1760,7 @@ GameObject:
   - component: {fileID: 7640366543000532495}
   - component: {fileID: 7601519791591364365}
   m_Layer: 10
-  m_Name: Image
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1812,7 +1814,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2242,6 +2244,7 @@ MonoBehaviour:
   skillType: 3
   VFXPrefab: {fileID: 0}
   skillStat: {fileID: 11400000, guid: d28edd7c06c54eb41acfe2353bf3c7bb, type: 2}
+  triggerSoundFX: {fileID: 0}
   OnTriggerEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -2313,6 +2316,7 @@ MonoBehaviour:
   skillType: 0
   VFXPrefab: {fileID: 0}
   skillStat: {fileID: 11400000, guid: e97c3c763371fb74a9d1c17db9e4502d, type: 2}
+  triggerSoundFX: {fileID: 0}
   OnTriggerEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -7663,6 +7667,7 @@ MonoBehaviour:
   skillType: 2
   VFXPrefab: {fileID: 0}
   skillStat: {fileID: 11400000, guid: 6b23be3638026ea41b75ffdc61557001, type: 2}
+  triggerSoundFX: {fileID: 0}
   OnTriggerEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -8098,7 +8103,7 @@ MonoBehaviour:
     _value: 0
     _inverse: 0
     _hash: -814817977
-  StateHashes: 0000000046980c4f14c27366213842f4a51b941b33fcc29f104cc139fa334f4ab99d7c49406246d303cc75d05df9b1c647688b2c2b7912e108c91147b1afdc30bd4eb85f0abf574f065e3320c7df733bcb3e175474822bd61b594c2e7d60556569089f1e
+  StateHashes: 0000000046980c4f14c27366213842f4a51b941b33fcc29f104cc139fa334f4ab99d7c49406246d303cc75d05df9b1c647688b2c2b7912e108c91147dbf4f121c165cbcbb1afdc30bd4eb85f0abf574f065e3320c7df733bcb3e175474822bd61b594c2e7d60556569089f1e
   TriggerHashes: 0000000028a981070d286c40213842f437b93501affd802515ac89bc5df9b1c62b7912e1
 --- !u!143 &6160381382846009959
 CharacterController:
@@ -8197,7 +8202,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   overlapSphere: {fileID: 0}
   joystick: {fileID: 0}
-  spawnTransform: {fileID: 0}
+  spawnPosPlayer: {x: 0, y: 0, z: 0}
   _playerTeam: 0
   networkObjs: {fileID: 8388264208586685474}
   collisionsEnvi: []
@@ -8297,6 +8302,7 @@ MonoBehaviour:
   skillType: 3
   VFXPrefab: {fileID: 0}
   skillStat: {fileID: 11400000, guid: 9f7e7d75207ffe14ea297546ec43e7e2, type: 2}
+  triggerSoundFX: {fileID: 0}
   OnTriggerEnter:
     m_PersistentCalls:
       m_Calls: []

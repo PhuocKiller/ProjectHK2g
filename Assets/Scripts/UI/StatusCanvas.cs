@@ -29,18 +29,21 @@ public class StatusCanvas : NetworkBehaviour
         if (!player)
         {
             creep = GetComponentInParent<CreepController>();
-            minimapImage.color= creep.playerTeam==0? Color.red: Color.green;
+            minimapImage.color= creep.playerTeam==0? Color.red: Color.blue;
         }
         else
         {
             
         }
-        if (player&&HasStateAuthority)
+        if (player)
         {
-            fixPosInjureDamage = injureDamage.GetComponent<RectTransform>().position;
-            minimapImage.color = player.playerTeam == 0 ? Color.red : Color.green;
-            GameObject.Find("MinimapCamera").transform.rotation = Quaternion.AngleAxis(90, Vector3.right)*
-                 Quaternion.AngleAxis(player.playerTeam == 0 ? -90:90, Vector3.forward);
+            minimapImage.color = player.playerTeam == 0 ? Color.red : Color.blue;
+            if(HasStateAuthority)
+            {
+                fixPosInjureDamage = injureDamage.GetComponent<RectTransform>().position;
+                GameObject.Find("MinimapCamera").transform.rotation = Quaternion.AngleAxis(90, Vector3.right) *
+                                 Quaternion.AngleAxis(player.playerTeam == 0 ? -90 : 90, Vector3.forward);
+            }
         }
     }
 

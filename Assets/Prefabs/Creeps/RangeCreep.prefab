@@ -10788,6 +10788,18 @@ MonoBehaviour:
   - {fileID: 7656987445486467007}
   - {fileID: 5008018405886279575}
   - {fileID: 5232838576839202047}
+  visualRender:
+  - {fileID: 4657792534871406660}
+  - {fileID: 5332941410401532735}
+  - {fileID: 6152553668686174493}
+  - {fileID: 3328623580023200800}
+  - {fileID: 3112781600669993707}
+  - {fileID: 941300109749437473}
+  - {fileID: 8538907276540219324}
+  - {fileID: 3474869126563416968}
+  teamMaterial:
+  - {fileID: 2100000, guid: ca23f6d7d20e81e4ca45a5f6cce88b62, type: 2}
+  - {fileID: 2100000, guid: 0897b41568b94b4489fc90cc2053fac2, type: 2}
 --- !u!65 &4581940765892146288
 BoxCollider:
   m_ObjectHideFlags: 0

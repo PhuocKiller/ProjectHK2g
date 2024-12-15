@@ -53,6 +53,8 @@ public class CreepController : NetworkBehaviour, ICanTakeDamage
     [Networked] float currentSilenTimeStatus { get; set; }
     [Networked] float maxSlowTimeStatus { get; set; }
     [Networked] float currentSlowTimeStatus { get; set; }
+    [SerializeField] GameObject[] visualRender;
+    [SerializeField]  Material[] teamMaterial;
     private void Awake()
     {
         characterControllerPrototype = GetComponent<CharacterController>();
@@ -71,6 +73,17 @@ public class CreepController : NetworkBehaviour, ICanTakeDamage
             playerStat.level = gameManager.levelCreep;
             playerStat.CalculateBaseStatForCreep();
             agent=GetComponent<NavMeshAgent>();
+            RenderVisualCreep();
+    }
+    void RenderVisualCreep()
+    {
+        foreach (var visual in visualRender)
+        {
+            MeshRenderer visualRender = visual.GetComponent<MeshRenderer>();
+            if (visualRender) visualRender.material = teamMaterial[playerTeam];
+            SkinnedMeshRenderer visualSkinRender = visual.GetComponent<SkinnedMeshRenderer>();
+            if (visualSkinRender) visualSkinRender.material = teamMaterial[playerTeam];
+        }
     }
     public override void FixedUpdateNetwork()
     {

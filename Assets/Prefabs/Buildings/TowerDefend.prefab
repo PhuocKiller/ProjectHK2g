@@ -1188,6 +1188,7 @@ MonoBehaviour:
   weapon: {fileID: 7080068515406301125}
   shootPosition: {fileID: 9040593527557363810}
   _playerTeam: 0
+  _towerID: 0
   buildingType: 0
   _state: 0
   _damage: 0
@@ -1208,6 +1209,12 @@ MonoBehaviour:
   - {fileID: 2716214547483795300, guid: 329da3e19d0c8a14aa7b4e4e15d64b32, type: 3}
   - {fileID: 2716214547483795300, guid: 0f537b52f1510ea4cbaff2c087045621, type: 3}
   sphereRender: {fileID: 1205937231934247156}
+  collapseImages:
+  - {fileID: 21300000, guid: 1d5e323f88b0b9d4fba1b1a4d1aa0e5e, type: 3}
+  - {fileID: 21300000, guid: 1d5e323f88b0b9d4fba1b1a4d1aa0e5e, type: 3}
+  startImages:
+  - {fileID: 21300000, guid: 69cc0deb2545e134f8438c990818e372, type: 3}
+  - {fileID: 21300000, guid: 733d974143ff702468b3a9cd26d5ca01, type: 3}
   minimapImage: {fileID: 6286268443373260513}
 --- !u!208 &6486894757809154880
 NavMeshObstacle:

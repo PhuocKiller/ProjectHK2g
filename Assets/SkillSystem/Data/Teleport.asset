@@ -17,7 +17,7 @@ MonoBehaviour:
   timerTrigger: 5
   cooldownTime: 0
   levelManaCosts: 
-  skillIcon: {fileID: 21300000, guid: 3bff78d48d6ea5145a02ebbc7fcbe960, type: 3}
+  skillIcon: {fileID: 21300000, guid: 425a6c5965f3f7e42870f4cbd98c156c, type: 3}
   triggerSoundFX: {fileID: 8300000, guid: d1afd3f4d23c24f418ffc315afb04965, type: 3}
   levelDamages: 
   isPhysicDamage: 0

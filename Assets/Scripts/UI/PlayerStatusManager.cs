@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStatusManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class PlayerStatusManager : MonoBehaviour
     public PlayerController player;
     [SerializeField] TextMeshProUGUI timeDie;
     [SerializeField] GameObject panelAvaterWhenDie;
+    [SerializeField] Sprite[] avaImages;
+    [SerializeField] Image avatar;
     private void OnEnable()
     {
         StartCoroutine(DelayCheckPlay());
@@ -36,5 +39,6 @@ public class PlayerStatusManager : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         Singleton<PlayerManager>.Instance.CheckPlayer(out int? state, out PlayerController player);
         this.player = player;
+        avatar.sprite = avaImages[(int)player.playerType];
     }
 }

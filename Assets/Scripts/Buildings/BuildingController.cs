@@ -40,6 +40,8 @@ public class BuildingController : NetworkBehaviour,ICanTakeDamage
     public MeshFilter[] meshVisualTower;
     public GameObject[] shootVFX;
     public MeshRenderer sphereRender;
+    [SerializeField] Sprite[] collapseImages;
+    [SerializeField] Sprite[] startImages;
     public Image minimapImage;
     public override void Spawned()
     {
@@ -53,6 +55,7 @@ public class BuildingController : NetworkBehaviour,ICanTakeDamage
         buildingController = GetComponent<CharacterController>();
         if(buildingType==BuildingType.Tower)
         {
+            minimapImage.sprite = startImages[playerTeam];
             for (int i = 0; i < 3; i++)
             {
                 meshVisualTower[i].mesh = meshTower[i + 3 * playerTeam];
@@ -181,6 +184,7 @@ public class BuildingController : NetworkBehaviour,ICanTakeDamage
        
         if (buildingType == BuildingType.Tower)
         {
+            minimapImage.sprite = collapseImages[playerTeam];
             PlayerController[] playersInEnemyTeam = FindObjectsOfType<PlayerController>();
             if (playersInEnemyTeam != null)
             {
