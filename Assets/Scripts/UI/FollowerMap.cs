@@ -12,6 +12,7 @@ public class FollowerMap: MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     private Canvas canvas;
     public Camera followCamera;
     public CinemachineFreeLook freelookCamera;
+    [SerializeField] GameObject[] hudObjects; 
     private void Start()
     {
         uiMinimapRect = GetComponent<RectTransform>();
@@ -24,6 +25,7 @@ public class FollowerMap: MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     {
         followCamera.enabled = true;
         freelookCamera.enabled = false;
+        SetActiveHud(false);
     }
 
     // Hàm này sẽ được gọi trong khi kéo
@@ -46,5 +48,10 @@ public class FollowerMap: MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         FindObjectOfType<MinimapCameraController>().BackToPlayer();
         followCamera.enabled = false;
         freelookCamera.enabled = true;
+        SetActiveHud (true);
+    }
+    void SetActiveHud(bool active)
+    {
+        foreach (var obj in hudObjects) obj.SetActive(active);
     }
 }

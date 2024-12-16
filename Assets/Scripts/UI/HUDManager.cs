@@ -8,6 +8,10 @@ public class HudManager : MonoBehaviour
     PlayerController player;
     public GameObject followBtn, unFollowBtn;
     [SerializeField] TextMeshProUGUI coinsValue;
+    private void Awake()
+    {
+        gameObject.SetActive(false);
+    }
     private void OnEnable()
     {
         StartCoroutine(DelayCheckPlay());

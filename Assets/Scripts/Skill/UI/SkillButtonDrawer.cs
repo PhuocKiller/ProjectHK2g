@@ -37,7 +37,7 @@ public class SkillButtonDrawer : MonoBehaviour
                 }
                 if (skillButtonClone.skillButtonType == SkillButtonTypes.Teleport)
                 {
-                    skillButtonClone.m_skillIcon.transform.localScale = Vector3.one * 1.5f;
+                    skillButtonClone.m_skillIcon.transform.localScale = Vector3.one * 1.26f;
                     skillButtonClone.levelSkill = 1;
                 }
                 if (skillButtonClone.skillButtonType == SkillButtonTypes.NormalAttack)

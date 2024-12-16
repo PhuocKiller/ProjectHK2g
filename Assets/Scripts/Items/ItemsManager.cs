@@ -124,12 +124,21 @@ public class ItemsManager : MonoBehaviour
         if(!player.playerStat.canBuyItem) return;
         if (player.playerStat.coinsValue< priceItem)
         {
-
+            Singleton<AudioManager>.Instance.PlaySound(Singleton<AudioManager>.Instance.error);
         }
         else
         {
             player.inventory.AddItem(itemToBuy.GetComponent<InventoryItemBase>(), out bool canAdd);
-            if (canAdd) player.playerStat.coinsValue -= priceItem;
+            if (canAdd)
+            {
+                player.playerStat.coinsValue -= priceItem;
+                Singleton<AudioManager>.Instance.PlaySound(Singleton<AudioManager>.Instance.buyItem);
+            }
+            else
+            {
+                Singleton<AudioManager>.Instance.PlaySound(Singleton<AudioManager>.Instance.error);
+            }
+                
         }
     }
     public void SellItem()
@@ -138,6 +147,7 @@ public class ItemsManager : MonoBehaviour
         if (!player.playerStat.canBuyItem) return;
         player.inventory.RemoveItem(itemToSell, indexSlot);
         player.playerStat.coinsValue += priceItem;
+        Singleton<AudioManager>.Instance.PlaySound(Singleton<AudioManager>.Instance.buyItem);
     }
     public void ShowInfoItem(InventoryItemBase item)
     {

@@ -43,7 +43,7 @@ public class ClockManager : MonoBehaviour
         {
             timeClockText.color = Color.red;
         }
-        else timeClockText.color = Color.black;
+        else timeClockText.color = Color.white;
 
     }
     void CalculateTime()

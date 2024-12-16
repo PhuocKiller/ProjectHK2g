@@ -40,5 +40,9 @@ public class AudioManager : MonoBehaviour
     {
         soundSource.Stop();
     }
+    public void ClickButtonSound()
+    {
+        PlaySound(clickButton, false);
+    }
 }
 
