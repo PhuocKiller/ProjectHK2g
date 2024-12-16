@@ -41,8 +41,6 @@ public class StatusCanvas : NetworkBehaviour
             if(HasStateAuthority)
             {
                 fixPosInjureDamage = injureDamage.GetComponent<RectTransform>().position;
-                GameObject.Find("MinimapCamera").transform.rotation = Quaternion.AngleAxis(90, Vector3.right) *
-                                 Quaternion.AngleAxis(player.playerTeam == 0 ? -90 : 90, Vector3.forward);
             }
         }
     }
