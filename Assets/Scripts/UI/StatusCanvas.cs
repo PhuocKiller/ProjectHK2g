@@ -13,7 +13,7 @@ public class StatusCanvas : NetworkBehaviour
     [SerializeField] CreepController creep;
     Shield firstShield;
     public Bars healthBarPlayer, manaBarPlayer, XPbar, TimeRemainingBar, timeShieldRemainingBar, teleBar;
-    public TextMeshProUGUI statusBeingTMP, injureDamage;
+    public TextMeshProUGUI statusBeingTMP, injureDamage,levelTMP;
     Vector3 fixPosInjureDamage;
     TickTimer timerhideInjureDamage;
     public Image minimapImage;
@@ -62,7 +62,9 @@ public class StatusCanvas : NetworkBehaviour
         if(player)
         {
             healthBarPlayer.UpdateBar(player.playerStat.currentHealth, player.playerStat.maxHealth);
-            if(player.playerStat.isBeingTele)
+            manaBarPlayer.UpdateBar(player.playerStat.currentMana, player.playerStat.maxMana);
+            levelTMP.text = player.playerStat.level.ToString();
+            if (player.playerStat.isBeingTele)
             {
                 if (TimeOfTele.RemainingTime(Runner) > 0)
                 {

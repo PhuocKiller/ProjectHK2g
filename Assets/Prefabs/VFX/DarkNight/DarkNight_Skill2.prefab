@@ -9919,7 +9919,7 @@ MonoBehaviour:
   WordOffset: 0
   WordCount: 0
   _interpolationDataSource: 0
-  _maxHealth: 100
+  _maxHealth: 0
   _maxMana: 0
   _damage: 0
   _defend: 5
@@ -9961,6 +9961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da582f1d8adac884585f14df09517e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCritPhysic: 0
 --- !u!1 &4061702221751250305
 GameObject:
   m_ObjectHideFlags: 0

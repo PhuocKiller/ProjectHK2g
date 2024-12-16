@@ -50,7 +50,7 @@ public class BaseRegen : NetworkBehaviour
                     if (otherPlayer.state != 3
                         && timerToApply[index].Expired(Runner))
                     {
-                        other.gameObject.GetComponent<ICanTakeDamage>().ApplyDamage(10, true, null,
+                        other.gameObject.GetComponent<ICanTakeDamage>().ApplyDamage(20, true, null,
                     activeInjureAnim: false);
                         timerToApply[index] = TickTimer.CreateFromSeconds(Runner, timerApply);
                     }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9013815446411296541}
   - component: {fileID: 5508201548287779868}
   m_Layer: 0
-  m_Name: Tesla_Skill1
+  m_Name: TowerShoot_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -205,7 +205,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.24597882, b: 0, a: 1}
+      maxColor: {r: 1, g: 0.24705884, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4753,7 +4753,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: be99d5263222d9448a795a482a0da1bc, type: 2}
+  - {fileID: 2100000, guid: 34b6729b437fe1e44a57a59785d971ef, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
