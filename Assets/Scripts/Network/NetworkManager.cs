@@ -196,7 +196,7 @@ public class NetworkManager : MonoBehaviour
     }
     public async void OnClickBtn(Button btn)
     {
-        if (runner != null)
+        if (playerID != "" &&runner!=null)
         {
             btn.interactable = false;
             Singleton<Loading>.Instance.ShowLoading();
@@ -216,7 +216,11 @@ public class NetworkManager : MonoBehaviour
             btn.interactable = true;
             onConnected?.Invoke();
             Singleton<Loading>.Instance.HideLoading();
-            
+            btn.gameObject.SetActive(false);
+        }
+        else
+        {
+            Singleton<AudioManager>.Instance.PlaySound(Singleton<AudioManager>.Instance.error);
         }
     }
     public void ShutdownRunner()

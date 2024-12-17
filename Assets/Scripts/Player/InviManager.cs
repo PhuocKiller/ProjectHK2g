@@ -53,7 +53,8 @@ public class InviManager : NetworkBehaviour
 
     private void CheckInviVisual(bool isVisible)
     {
-        if(!HasStateAuthority) //con nào chủ thế của invi thì ko bị ảnh hưởng
+        Singleton<PlayerManager>.Instance.CheckPlayer(out int? state, out PlayerController mainPlayer);
+        if (player.playerTeam!= mainPlayer.playerTeam) //con nào chủ thế của invi thì ko bị ảnh hưởng
         {
             foreach (var visual in visuals)
             {

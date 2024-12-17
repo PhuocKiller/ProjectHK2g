@@ -1728,6 +1728,7 @@ MonoBehaviour:
   - {fileID: 980217192268357217}
   - {fileID: 2935343545354279693}
   m_skillBtnDrawer: {fileID: 0}
+  _indexSkill_Level: 
 --- !u!1 &6415596220619979907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,6 +2268,7 @@ MonoBehaviour:
   _isLifeSteal: 0
   _isVisible: 0
   _isUnderTower: 0
+  _isUnderSeeRange: 0
   _isStartFadeInvi: 0
   _isUnstopAble: 0
   _isCounter: 0
@@ -3866,6 +3868,10 @@ PrefabInstance:
     - target: {fileID: 82782155465436393, guid: f8bbcbc8403b2e945b0e5ee89eca720e, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 344164275032582820, guid: f8bbcbc8403b2e945b0e5ee89eca720e, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 988395423215609037, guid: f8bbcbc8403b2e945b0e5ee89eca720e, type: 3}
       propertyPath: m_Layer

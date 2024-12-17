@@ -9,7 +9,7 @@ public class InviObjects : NetworkBehaviour
     private Vector3 direction;
     private NetworkRigidbody rb;
     private List<Collider> collisions = new List<Collider>();
-    private TickTimer timer;
+    public TickTimer timer;
     public float timerDespawn, timeEffect;
     public int damage;
     public bool isPhysicDamage, isMakeStun, isMakeSlow, isMakeSilen, isDestroyWhenCollider;
@@ -17,7 +17,7 @@ public class InviObjects : NetworkBehaviour
     {
         base.Spawned();
         collisions.Clear();
-        if (HasStateAuthority && HasInputAuthority)
+        if (HasStateAuthority)
         {
             timer = TickTimer.CreateFromSeconds(Runner, timerDespawn);
         }
@@ -42,7 +42,7 @@ public class InviObjects : NetworkBehaviour
     {
         base.FixedUpdateNetwork();
         if (!HasStateAuthority) return;
-        if (timer.Expired(Runner) ||(player.playerStat.isVisible==false&& player.state!=0))
+        if (timer.ExpiredOrNotRunning(Runner) ||(player.playerStat.isVisible==false&& player.state!=0))
         {
            StartCoroutine(VisibleAgain());
         }
@@ -60,9 +60,13 @@ public class InviObjects : NetworkBehaviour
     {
         player.statusCanvas.GetComponent<InviManager>().BackDefaultMaterial();
     }
-    public override void Despawned(NetworkRunner runner, bool hasState)
+    /*public override void Despawned(NetworkRunner runner, bool hasState)
     {
         base.Despawned(runner, hasState);
         if (gameObject != null) player.playerStat.isVisible = true;
     }
+    private void OnDestroy()
+    {
+        if (gameObject != null) player.playerStat.isVisible = true;
+    }*/
 }

@@ -36,7 +36,7 @@ public class PlayerStatusManager : MonoBehaviour
     }
     IEnumerator DelayCheckPlay()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.5f);
         Singleton<PlayerManager>.Instance.CheckPlayer(out int? state, out PlayerController player);
         this.player = player;
         avatar.sprite = avaImages[(int)player.playerType];
