@@ -823,6 +823,8 @@ public class PlayerController : NetworkBehaviour, ICanTakeDamage
     {
         if (!Runner.TryFindObject(id, out NetworkObject item)) return;
         item.transform.SetParent(buffFromItemManager.transform);
+        
+
         item.GetComponent<Collider>().enabled = false;
         MeshRenderer[] meshItems = item.GetComponentsInChildren<MeshRenderer>();
         foreach (var mesh in meshItems)

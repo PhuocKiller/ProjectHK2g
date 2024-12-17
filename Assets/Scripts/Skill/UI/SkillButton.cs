@@ -1,4 +1,5 @@
 ﻿using Cinemachine;
+using ExitGames.Client.Photon.StructWrapping;
 using Fusion;
 using System;
 using System.Collections;
@@ -31,6 +32,7 @@ public class SkillButton : MonoBehaviour
     public SkillName m_skillName;
     public Action Skill_Trigger;
     public int indexInventory;
+    int indexSkill;
     [SerializeField] float timerTrigger;
     [SerializeField] int[] levelManaCosts;
     [SerializeField] AudioClip triggerSoundFX;
@@ -193,6 +195,14 @@ public class SkillButton : MonoBehaviour
     }
     public void UpdateLevelSkill()
     {
+        
+        switch (skillButtonType)
+        {
+            case SkillButtonTypes.Ultimate: {indexSkill = 0; break; }
+            case SkillButtonTypes.Skill_1: { indexSkill = 1; break; }
+            case SkillButtonTypes.Skill_2: { indexSkill = 2; break; }
+        }
+        player.skillManager.indexSkill_Level.Set(indexSkill, player.skillManager.indexSkill_Level.Get(indexSkill) + 1);
         levelSkill++;
         player.playerStat.levelPoint--;
         CalculateDamageAndManaCost();
@@ -218,7 +228,6 @@ public class SkillButton : MonoBehaviour
         if (skillButtonType == SkillButtonTypes.Jump)
         {
             player.Jump(VfxEffect);
-            player.playerStat.UpgradeLevel();
         }
         if (skillButtonType == SkillButtonTypes.NormalAttack)
         {
@@ -230,7 +239,7 @@ public class SkillButton : MonoBehaviour
             if (player.playerStat.isBeingSilen) return;
             player.Ultimate(VfxEffect, damageSkill, manaCost, isPhysicDamage, isMakeStun, isMakeSlow, isMakeSilen,
          timerTrigger, timeEffect, posMouseUp, levelSkill);
-
+    
         }
         if (skillButtonType == SkillButtonTypes.Skill_2)
         {

@@ -13,13 +13,17 @@ public class SkillManager : NetworkBehaviour
     public Dictionary<SkillName, int> SkillCollecteds { get => m_skillCollecteds; set { } }
    [SerializeField] private SkillButtonDrawer m_skillBtnDrawer;
    bool isAwake;
-
+    [Networked, Capacity(3)] public NetworkArray<int> indexSkill_Level { get; }
     public override void Spawned()
     {
         base.Spawned();
         if(HasStateAuthority)
         {
             Initialize();
+            for (int i = 0; i < indexSkill_Level.Length; i++)
+            {
+                indexSkill_Level.Set(i, 0);
+            }
             DrawSkill();
         }
     }

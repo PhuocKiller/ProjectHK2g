@@ -180,7 +180,7 @@ public class PlayerStat : NetworkBehaviour
 
     private void UpdateFullStat()
     {
-        if (player?.state == 3 ||creep?.state==3) return;
+        if (creep?.state==3) return;
         maxHealth = b_maxHealth + playerBuffManager.maxHealth;
         if(maxHealth<1) maxHealth = 1;
         if (currentHealth > maxHealth) currentHealth = maxHealth;

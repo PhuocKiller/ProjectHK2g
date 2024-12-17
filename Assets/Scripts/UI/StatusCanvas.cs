@@ -73,7 +73,7 @@ public class StatusCanvas : NetworkBehaviour
                 }
                 else
                 {
-                    player.TeleToBase();
+                  if(HasStateAuthority)  player.TeleToBase();
                 }
             }
             player.transform.GetChild(0).GetChild(0).rotation = Quaternion.AngleAxis(Camera.main.transform.rotation.eulerAngles.y, Vector3.up);

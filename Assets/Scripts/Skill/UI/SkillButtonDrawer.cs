@@ -45,6 +45,18 @@ public class SkillButtonDrawer : MonoBehaviour
                     skillButtonClone.m_skillIcon.transform.localScale = Vector3.one * 1.37f;
                     skillButtonClone.levelSkill = 1;
                 }
+                if(skillButtonClone.skillButtonType == SkillButtonTypes.Ultimate)
+                {
+                    skillButtonClone.levelSkill = skillManager.indexSkill_Level.Get(0);
+                }
+                if (skillButtonClone.skillButtonType == SkillButtonTypes.Skill_1)
+                {
+                    skillButtonClone.levelSkill = skillManager.indexSkill_Level.Get(1);
+                }
+                if (skillButtonClone.skillButtonType == SkillButtonTypes.Skill_2)
+                {
+                    skillButtonClone.levelSkill = skillManager.indexSkill_Level.Get(2);
+                }
             }
            
         }

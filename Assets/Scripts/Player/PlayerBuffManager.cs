@@ -50,11 +50,11 @@ public class PlayerBuffManager : NetworkBehaviour
             moveSpeed = 0; foreach (var buff in listBuffsofPlayer) moveSpeed += buff.moveSpeed;
             attackSpeed = 0; foreach (var buff in listBuffsofPlayer) attackSpeed += buff.attackSpeed;
             lifeSteal = 0; foreach (var buff in listBuffsofPlayer) lifeSteal += buff.lifeSteal;
-            if (player?.state == 3 || creep?.state==3)
+            if (player?.state == 3 || creep?.state == 3)
             {
-                for (int i = 3; i < listBuffsofPlayer.Length; i++) //i=0 là environment, 1 là passive, 2 là item
+                for (int i = 2; i < listBuffsofPlayer.Length; i++) //i=0 là environment, 1 là passive
                 {
-                    if(listBuffsofPlayer[i].GetComponent<InventoryItemBase>()!=null)
+                    if (listBuffsofPlayer[i].GetComponent<InventoryItemBase>() == null)
                     {
                         Destroy(listBuffsofPlayer[i].gameObject);
                     }
