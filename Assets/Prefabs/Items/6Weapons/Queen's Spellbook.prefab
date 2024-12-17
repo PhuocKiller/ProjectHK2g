@@ -231,7 +231,7 @@ MonoBehaviour:
   _damage: 0
   _defend: 0
   _magicResistance: 0
-  _magicAmpli: 0.7
+  _magicAmpli: 0.5
   _criticalChance: 0
   _criticalDamage: 0
   _moveSpeed: 20

@@ -47,8 +47,8 @@ public class LoginController : MonoBehaviour
             await AuthenticationService.Instance.SignInWithUnityAsync(accessToken);
             Debug.Log("SignIn is successful.");
 
-            playerInfo = AuthenticationService.Instance.PlayerInfo;
-
+            FindObjectOfType<NetworkManager>().playerID = AuthenticationService.Instance.PlayerId;
+            Debug.Log(AuthenticationService.Instance.PlayerId);
             var name = await AuthenticationService.Instance.GetPlayerNameAsync();
 
             playerProfile.playerInfo = playerInfo;

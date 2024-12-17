@@ -15,7 +15,7 @@ public class PlayerController : NetworkBehaviour, ICanTakeDamage
     public Inventory inventory;
     public SkillManager skillManager;
     public PlayerCallBackInfomation playerCallBack;
-    [Networked] public string playerID {  get; set; }
+    [Networked] public NetworkString<_32> playerID {  get; set; }
     public Transform buffFromItemManager;
     public NetworkManager runnerManager;
     public GameManager gameManager;

@@ -62,6 +62,7 @@ public class NetworkManager : MonoBehaviour
                 onBeforeSpawned: (NetworkRunner runner, NetworkObject obj) =>
                 {
                     obj.GetComponent<PlayerController>().playerID= runner.GetPlayerUserId(player);
+                    
                     obj.GetComponent<PlayerController>().playerTeam = playerTeam;
                 });
         }

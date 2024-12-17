@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
+using Fusion;
 
 public class Login : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class Login : MonoBehaviour
     {
         playersGame.Clear();
     }
-    public static Dictionary<string, PlayerController> playersGame = new Dictionary<string, PlayerController>();
+    public static Dictionary<NetworkString<_32>, PlayerController> playersGame = new Dictionary<NetworkString<_32>, PlayerController>();
     public static void AddPlayer(PlayerController player)
     {
         playersGame.TryGetValue(player.playerID, out PlayerController playerData);

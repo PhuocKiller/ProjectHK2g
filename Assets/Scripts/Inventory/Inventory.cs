@@ -137,7 +137,7 @@ public class Inventory : NetworkBehaviour
                     {
                         ItemAdded(this, new InventoryEventArgs(item));
                     }
-                   // networkManager.SpawnObjWhenAddItem(networkManager.FindItemBaseOnName(item.Name), mSlots[i].Id);
+                   networkManager.SpawnObjWhenAddItem(networkManager.FindItemBaseOnName(item.Name), mSlots[i].Id);
                     SkillButton btn = inventoryPanel.GetChild(mSlots[i].Id).GetComponent<SkillButton>();
                     btn.Initialize(item.skillName);
                 }
