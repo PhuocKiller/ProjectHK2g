@@ -62,6 +62,7 @@ public class PlayerStat : NetworkBehaviour
     [HideInInspector][Networked] public bool isLifeSteal { get; set; }
     [Networked] public bool isVisible { get; set; }
     [Networked] public bool isUnderTower { get; set; }
+    [Networked] public bool isUnderSeeRange { get; set; }
     [Networked] public bool isStartFadeInvi { get; set; }
     [Networked] public bool isUnstopAble { get; set; }
     [Networked] public bool isCounter { get; set; }
@@ -96,11 +97,17 @@ public class PlayerStat : NetworkBehaviour
         base.Spawned();
         player = transform.parent.parent.GetComponent<PlayerController>();
         creep = transform.parent.parent.GetComponent<CreepController>();
-        if(player)
+        Singleton<PlayerManager>.Instance.CheckPlayer(out int? state, out PlayerController mainPlayer);
+        if (player)
         {
             playerBuffManager = player.GetComponentInChildren<PlayerBuffManager>();
+           //isUnderSeeRange = player.playerTeam == mainPlayer.playerTeam;
         }
-        else { playerBuffManager = creep.GetComponentInChildren<PlayerBuffManager>(); }
+        else 
+        { 
+            playerBuffManager = creep.GetComponentInChildren<PlayerBuffManager>();
+          //  isUnderSeeRange = creep.playerTeam == mainPlayer.playerTeam;
+        }
         
         currentHealth = 1; //tránh bị bằng =0 trong lần đầu tiên cập nhật
         levelPoint = 0;

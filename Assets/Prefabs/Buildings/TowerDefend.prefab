@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 173239667636925599}
   - component: {fileID: 2077822638853016376}
   - component: {fileID: 6810538111076877975}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FillBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 7080068515406301125}
   - component: {fileID: 3928423632025461467}
   - component: {fileID: 2571063145051471249}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Weepon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9040593527557363810}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1046941141296716325}
   - component: {fileID: 4041928090317690970}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 3524293823463786370}
   - component: {fileID: 8607119222162455122}
   - component: {fileID: 8504977967469415603}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7187253338989205372}
   - component: {fileID: 4070384924256360949}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 6363996666817108771}
   - component: {fileID: 8331605915167934665}
   - component: {fileID: 3857432280262357481}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FadeBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 4069356471150134880}
   - component: {fileID: 8716622799002458770}
   - component: {fileID: 5226825983570442570}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StatusCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -836,7 +836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1595978560460670283}
   - component: {fileID: 2225365716287095762}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OverlapSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -886,7 +886,7 @@ GameObject:
   - component: {fileID: 6259970553439219228}
   - component: {fileID: 6045771900970414868}
   - component: {fileID: 4541726703723264813}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -971,7 +971,7 @@ GameObject:
   - component: {fileID: 4989385516973526504}
   - component: {fileID: 5802879287114551620}
   - component: {fileID: 6747778158948449002}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: weapon-turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1241,7 +1241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8902367441135438566}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VisualHealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1354,7 +1354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8518846403708434389}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Parent Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}

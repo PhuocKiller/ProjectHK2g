@@ -1,6 +1,7 @@
 using Fusion;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -121,5 +122,29 @@ public class StatusCanvas : NetworkBehaviour
         this.injureDamage.GetComponent<RectTransform>().localPosition=fixPosInjureDamage;
         playerBeingAttack = true;
         timerhideInjureDamage = TickTimer.CreateFromSeconds(Runner, 0.5f);
+    }
+    public void RenderActive(bool isActive, bool isPlayer)
+    {
+        if (isPlayer)
+        {
+            Debug.Log(isActive);
+            MeshRenderer[] meshs = GetComponentsInChildren<MeshRenderer>();
+            if (meshs.Length > 0)
+            {
+                foreach (MeshRenderer mesh in meshs)
+                {
+                    mesh.enabled = isActive;
+                }
+            }
+            SkinnedMeshRenderer[] skinMeshs = GetComponentsInChildren<SkinnedMeshRenderer>();
+            if (skinMeshs.Length > 0)
+            {
+                foreach (SkinnedMeshRenderer mesh in skinMeshs)
+                {
+                    mesh.enabled = isActive;
+                }
+            }
+        }
+        
     }
 }

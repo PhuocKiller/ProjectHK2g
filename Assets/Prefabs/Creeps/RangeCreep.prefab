@@ -267,7 +267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2871558058407812544}
   - component: {fileID: 8819942579781374279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sagittarius
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -326,7 +326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1471895653666587382}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: foot.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5247,7 +5247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8544068440940270111}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: upperleg.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5279,7 +5279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 31905096404570675}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hand.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5344,7 +5344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476188114751756156}
   - component: {fileID: 1989105601905209715}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Druid_LegRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20633,7 +20633,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7337002303258228404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25728,7 +25728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3832630711800972732}
   - component: {fileID: 5118407979201052612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Druid_LegLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26256,7 +26256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3828209287113501963}
   - component: {fileID: 93780685605590384}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Druid_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26383,7 +26383,7 @@ GameObject:
   - component: {fileID: 4283740886127907122}
   - component: {fileID: 926963303173299863}
   - component: {fileID: 3114744365493742173}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: druid_staff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26464,7 +26464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4806910007932218016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: upperarm.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31328,7 +31328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 235558444486614166}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wrist.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36228,7 +36228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6617953688962675674}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lowerleg.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36312,7 +36312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2884147163107770903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36385,7 +36385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5070835659359947238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: upperarm.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36417,7 +36417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1460959209213655796}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: foot.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36450,7 +36450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6321746413208966571}
   - component: {fileID: 5172509102857869846}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Druid_ArmLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46503,7 +46503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1150706679152352399}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46598,7 +46598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1128236439365915725}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: toes.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46661,7 +46661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2517519692957296213}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lowerleg.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46694,7 +46694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6667316785961644490}
   - component: {fileID: 2276931644348228775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Druid_ArmRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51742,7 +51742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 517965062926946362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lowerarm.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61703,7 +61703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6964141720354886780}
   - component: {fileID: 448802103409008165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Druid_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61828,7 +61828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3780906780515971630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76679,7 +76679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5597193895313559715}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: handslot.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76710,7 +76710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1334056229743391767}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: handslot.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81631,7 +81631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5263993798121968106}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lowerarm.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81663,7 +81663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3656370435562815900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: toes.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91516,7 +91516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 689466231498832013}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: upperleg.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91548,7 +91548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1462060692848476154}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wrist.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101473,7 +101473,7 @@ GameObject:
   - component: {fileID: 3341683123146217941}
   - component: {fileID: 8762951296012988874}
   - component: {fileID: 6828073277405681768}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Druid_Backpack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101554,7 +101554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1525366827531799743}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hand.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106553,7 +106553,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3151396836860659619}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106587,7 +106587,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3190885037869418780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106794,6 +106794,7 @@ MonoBehaviour:
   teleBar: {fileID: 0}
   statusBeingTMP: {fileID: 6017485189751828383}
   injureDamage: {fileID: 8641553394798894297}
+  levelTMP: {fileID: 0}
   minimapImage: {fileID: 5514245184732723729}
   _currentTeleTimeStatus: 0
 --- !u!1001 &5038461875449495708
@@ -106819,6 +106820,10 @@ PrefabInstance:
     - target: {fileID: 2353795031655743524, guid: ea40c9e4826ea4a4abb134a206d93ecf, type: 3}
       propertyPath: m_Name
       value: PlayerScore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353795031655743524, guid: ea40c9e4826ea4a4abb134a206d93ecf, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8820444178253631058, guid: ea40c9e4826ea4a4abb134a206d93ecf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -106893,6 +106898,10 @@ PrefabInstance:
     - target: {fileID: 6147069045808176770, guid: 40b54220d870405469e43efcb4e8dfc0, type: 3}
       propertyPath: m_Name
       value: OverlapSphere
+      objectReference: {fileID: 0}
+    - target: {fileID: 6147069045808176770, guid: 40b54220d870405469e43efcb4e8dfc0, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7021260603487675290, guid: 40b54220d870405469e43efcb4e8dfc0, type: 3}
       propertyPath: m_LocalPosition.x

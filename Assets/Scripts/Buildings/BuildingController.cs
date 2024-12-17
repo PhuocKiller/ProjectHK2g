@@ -61,11 +61,11 @@ public class BuildingController : NetworkBehaviour,ICanTakeDamage
                 meshVisualTower[i].mesh = meshTower[i + 3 * playerTeam];
             }
             TimeOfAttack = TickTimer.CreateFromSeconds(Runner, 0);
-            maxHealth = 5 + gameManager.levelCreep * 50;
+            maxHealth = 1500 + gameManager.levelCreep * 50;
         }
         else
         {
-            maxHealth = 10 + gameManager.levelCreep * 50;
+            maxHealth = 2000 + gameManager.levelCreep * 50;
         }
         currentHealth = maxHealth;
         state = 0;

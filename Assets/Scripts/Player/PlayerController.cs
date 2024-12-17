@@ -104,6 +104,7 @@ public class PlayerController : NetworkBehaviour, ICanTakeDamage
             TimeOfSilenDebuff = TickTimer.CreateFromSeconds(Runner, 0);
             UIManagerRegisInven();
         }
+       // statusCanvas.RenderActive(HasStateAuthority,true);
         joystick = FindObjectOfType<Joystick>();
         Login.AddPlayer(this);
     }

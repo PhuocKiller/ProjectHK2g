@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8144802587914845076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: handslot.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7592363170964390989}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: upperarm.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10286,7 +10286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3829056266955063735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: upperleg.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15658,7 +15658,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6580537203273880396}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lowerarm.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15691,7 +15691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6421756936630630613}
   - component: {fileID: 4169824504186464732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rogue_LegLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25594,7 +25594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8467026282404961091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35851,7 +35851,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6549570192308173994}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Melee
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -35927,7 +35927,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3590034922562290542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: toes.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35958,7 +35958,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6901014137043257490}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: handslot.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35989,7 +35989,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7903275132543206530}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: foot.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46012,7 +46012,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1762704510550346694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wrist.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46076,7 +46076,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2248362708780736930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: upperleg.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46142,7 +46142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7850083621429347430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: foot.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46175,7 +46175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4303813340385748275}
   - component: {fileID: 4343564455332655383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rogue_LegRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51189,7 +51189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6113752844396729019}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lowerleg.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61074,7 +61074,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5168094978126602616}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66070,7 +66070,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7955732308130508075}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: upperarm.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71143,7 +71143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2421210655500773468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lowerleg.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71176,7 +71176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5626446211652464395}
   - component: {fileID: 3084955133311736715}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rogue_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76190,7 +76190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7441346138014433965}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76299,7 +76299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4206988159888839440}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: toes.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76331,7 +76331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4193953261781000236}
   - component: {fileID: 803024329966456933}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rogue_ArmLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76457,7 +76457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2521203527668565309}
   - component: {fileID: 7242447103787011989}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rogue_ArmRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81471,7 +81471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3102516027727603107}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lowerarm.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81503,7 +81503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9002371581592158001}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hand.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81535,7 +81535,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4324226833268443366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hand.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81568,7 +81568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4417571199834031943}
   - component: {fileID: 5588283095468111782}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rogue_Head_Hooded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86683,7 +86683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6121117054950490905}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wrist.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86715,7 +86715,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8512952039630284157}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91584,7 +91584,7 @@ GameObject:
   - component: {fileID: 6395533709009241533}
   - component: {fileID: 8444446060098389392}
   - component: {fileID: 8644510496577645679}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rogue_Cape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106388,7 +106388,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3529301848475497093}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106479,7 +106479,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6675257537145816046}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106687,6 +106687,7 @@ MonoBehaviour:
   teleBar: {fileID: 0}
   statusBeingTMP: {fileID: 6017485189751828383}
   injureDamage: {fileID: 5029926742168534071}
+  levelTMP: {fileID: 0}
   minimapImage: {fileID: 7258768713334191005}
   _currentTeleTimeStatus: 0
 --- !u!1001 &5038461875449495708
@@ -106712,6 +106713,10 @@ PrefabInstance:
     - target: {fileID: 2353795031655743524, guid: ea40c9e4826ea4a4abb134a206d93ecf, type: 3}
       propertyPath: m_Name
       value: PlayerScore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353795031655743524, guid: ea40c9e4826ea4a4abb134a206d93ecf, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8820444178253631058, guid: ea40c9e4826ea4a4abb134a206d93ecf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -106786,6 +106791,10 @@ PrefabInstance:
     - target: {fileID: 6147069045808176770, guid: 40b54220d870405469e43efcb4e8dfc0, type: 3}
       propertyPath: m_Name
       value: OverlapSphere
+      objectReference: {fileID: 0}
+    - target: {fileID: 6147069045808176770, guid: 40b54220d870405469e43efcb4e8dfc0, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7021260603487675290, guid: 40b54220d870405469e43efcb4e8dfc0, type: 3}
       propertyPath: m_LocalPosition.x
