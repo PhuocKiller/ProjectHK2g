@@ -103,12 +103,12 @@ public class NetworkManager : MonoBehaviour
     public void SpawnCreep(PlayerRef player)
     {
         if (!runner.IsSharedModeMasterClient) return;
-      //  SpawnMeleeCreep(player);
+        SpawnMeleeCreep(player);
         SpawnRangeCreep(player);
     }
     void SpawnMeleeCreep(PlayerRef player)
     {
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 2; i++)
         {
             
             runner.Spawn(creeps[0], spawnPointCreep[0].position + Vector3.left * 2f * i, spawnPointCreep[0].rotation,

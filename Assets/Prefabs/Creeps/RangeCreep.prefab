@@ -266,7 +266,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2871558058407812544}
-  - component: {fileID: 8819942579781374279}
   m_Layer: 8
   m_Name: Sagittarius
   m_TagString: Untagged
@@ -296,27 +295,6 @@ Transform:
   - {fileID: 7337002303258228404}
   m_Father: {fileID: 7635038691538384055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &8819942579781374279
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536083397500503080}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 0b3da1f3c3be7b14bbbc3e7c0295b0b4, type: 2}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &624822048760959922
 GameObject:
   m_ObjectHideFlags: 0
@@ -5556,7 +5534,6 @@ MonoBehaviour:
   _isVisible: 0
   _isUnderTower: 0
   _isInSight: 0
-  _isUnderSeeRange: 0
   _isStartFadeInvi: 0
   _isUnstopAble: 0
   _isCounter: 0
@@ -106836,13 +106813,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8274366050162462161}
     m_Modifications:
+    - target: {fileID: 1352516683844770086, guid: 4abc57b8447e4804c8f84db1555d7ce1, type: 3}
+      propertyPath: m_Radius
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3481167934303518414, guid: 4abc57b8447e4804c8f84db1555d7ce1, type: 3}
       propertyPath: m_Name
       value: VisualSightSphere
       objectReference: {fileID: 0}
     - target: {fileID: 3481167934303518414, guid: 4abc57b8447e4804c8f84db1555d7ce1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5446710226813214916, guid: 4abc57b8447e4804c8f84db1555d7ce1, type: 3}
       propertyPath: m_LocalPosition.x

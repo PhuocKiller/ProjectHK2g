@@ -63,7 +63,6 @@ public class PlayerStat : NetworkBehaviour
     [Networked] public bool isVisible { get; set; }
     [Networked] public bool isUnderTower { get; set; }
     [Networked] public bool isInSight { get; set; }
-    [Networked] public bool isUnderSeeRange { get; set; }
     [Networked] public bool isStartFadeInvi { get; set; }
     [Networked] public bool isUnstopAble { get; set; }
     [Networked] public bool isCounter { get; set; }
@@ -102,18 +101,19 @@ public class PlayerStat : NetworkBehaviour
         if (player)
         {
             playerBuffManager = player.GetComponentInChildren<PlayerBuffManager>();
-           //isUnderSeeRange = player.playerTeam == mainPlayer.playerTeam;
+            if(player.playerTeam==FindObjectOfType<NetworkManager>().playerTeam) isInSight = true;
         }
-        else 
+        else //creep
         { 
             playerBuffManager = creep.GetComponentInChildren<PlayerBuffManager>();
-          //  isUnderSeeRange = creep.playerTeam == mainPlayer.playerTeam;
+            if (creep.playerTeam == FindObjectOfType<NetworkManager>().playerTeam) isInSight = true;
         }
         
         currentHealth = 1; //tránh bị bằng =0 trong lần đầu tiên cập nhật
         levelPoint = 0;
         UpgradeLevel();
         isVisible = true; isLive = true; isLifeSteal = true;
+        
         coinsValue = 30000;
     }
     public override void FixedUpdateNetwork()

@@ -5439,7 +5439,6 @@ MonoBehaviour:
   _isVisible: 0
   _isUnderTower: 0
   _isInSight: 0
-  _isUnderSeeRange: 0
   _isStartFadeInvi: 0
   _isUnstopAble: 0
   _isCounter: 0
@@ -106938,13 +106937,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8274366050162462161}
     m_Modifications:
+    - target: {fileID: 1352516683844770086, guid: 4abc57b8447e4804c8f84db1555d7ce1, type: 3}
+      propertyPath: m_Radius
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3481167934303518414, guid: 4abc57b8447e4804c8f84db1555d7ce1, type: 3}
       propertyPath: m_Name
       value: VisualSightSphere
       objectReference: {fileID: 0}
     - target: {fileID: 3481167934303518414, guid: 4abc57b8447e4804c8f84db1555d7ce1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5446710226813214916, guid: 4abc57b8447e4804c8f84db1555d7ce1, type: 3}
       propertyPath: m_LocalPosition.x

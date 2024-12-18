@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class VisualSightSphere : NetworkBehaviour
 {
@@ -52,7 +51,7 @@ public class VisualSightSphere : NetworkBehaviour
         else if (creep) creep.statusCanvas.GetComponent<InviManager>().VisualOfPlayer(active);
         else tower.GetComponent<InviManager>().VisualOfPlayer(active);
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (player)
         {
