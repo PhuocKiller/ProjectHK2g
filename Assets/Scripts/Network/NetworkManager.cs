@@ -103,7 +103,7 @@ public class NetworkManager : MonoBehaviour
     public void SpawnCreep(PlayerRef player)
     {
         if (!runner.IsSharedModeMasterClient) return;
-        SpawnMeleeCreep(player);
+      //  SpawnMeleeCreep(player);
         SpawnRangeCreep(player);
     }
     void SpawnMeleeCreep(PlayerRef player)
@@ -145,6 +145,14 @@ public class NetworkManager : MonoBehaviour
         NetworkObject item=runner.Spawn(itemObj);
         Singleton<PlayerManager>.Instance.CheckPlayer(out int? state, out PlayerController player);
         player.SetParentItemRPC(item.Id, indexItemSlot);
+        MeshRenderer[] allmeshs= item.GetComponentsInChildren<MeshRenderer>();
+        if (allmeshs.Length > 0)
+        {
+            foreach (MeshRenderer mesh in allmeshs)
+            {
+                Destroy(mesh);
+            }
+        }
     }
     public void DestroyObjWhenRemoveItem(string name)
     {

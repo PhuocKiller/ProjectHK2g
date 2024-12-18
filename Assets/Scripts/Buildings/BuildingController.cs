@@ -22,6 +22,7 @@ public class BuildingController : NetworkBehaviour,ICanTakeDamage
     public Transform weapon, shootPosition;
     [Networked] public int playerTeam { get; set; }
     [Networked] public int towerID { get; set; }
+    [Networked] public bool isInSight { get; set; }
 
     CharacterController buildingController;
     public BuildingType buildingType;
@@ -238,5 +239,13 @@ public class BuildingController : NetworkBehaviour,ICanTakeDamage
     {
        playerEnemy.playerStat.GainCoinWhenKill(500);
     }
-    
+    public void ChangeBoolIsInSight(bool isInSight)
+    {
+        ChangeBoolIsInSightRPC(isInSight);
+    }
+    [Rpc(RpcSources.All, RpcTargets.All)]
+    public void ChangeBoolIsInSightRPC(bool isInSight)
+    {
+        this.isInSight = isInSight;
+    }
 }

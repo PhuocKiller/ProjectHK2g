@@ -62,6 +62,7 @@ public class PlayerStat : NetworkBehaviour
     [HideInInspector][Networked] public bool isLifeSteal { get; set; }
     [Networked] public bool isVisible { get; set; }
     [Networked] public bool isUnderTower { get; set; }
+    [Networked] public bool isInSight { get; set; }
     [Networked] public bool isUnderSeeRange { get; set; }
     [Networked] public bool isStartFadeInvi { get; set; }
     [Networked] public bool isUnstopAble { get; set; }
@@ -225,5 +226,14 @@ public class PlayerStat : NetworkBehaviour
         {
             Destroy(transform.parent.parent.gameObject);
         }
+    }
+    public void ChangeBoolIsInSight(bool isInSight)
+    {
+        ChangeBoolIsInSightRPC(isInSight);
+    }
+    [Rpc(RpcSources.All, RpcTargets.All)]
+    public void ChangeBoolIsInSightRPC(bool isInSight)
+    {
+        this.isInSight=isInSight;
     }
 }

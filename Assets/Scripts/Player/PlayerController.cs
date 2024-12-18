@@ -23,6 +23,7 @@ public class PlayerController : NetworkBehaviour, ICanTakeDamage
     public Joystick joystick;
     public Vector3 spawnPosPlayer;
     [Networked]  public int playerTeam { get; set; }
+    
     public ListNetworkObject networkObjs;
     public List<Collider> collisionsEnvi = new List<Collider>();
     public BuffsOfPlayer buffsFromEnvi,buffsFromPassive;
@@ -88,6 +89,7 @@ public class PlayerController : NetworkBehaviour, ICanTakeDamage
         playerCallBack = GetComponentInChildren<PlayerCallBackInfomation>();
         skillManager=GetComponentInChildren<SkillManager>();
         inventory = GetComponentInChildren<Inventory>();
+
     }
     public override void Spawned()
     {
@@ -107,6 +109,7 @@ public class PlayerController : NetworkBehaviour, ICanTakeDamage
        // statusCanvas.RenderActive(HasStateAuthority,true);
         joystick = FindObjectOfType<Joystick>();
         Login.AddPlayer(this);
+        
     }
     public void UIManagerRegisInven()
     {
@@ -115,7 +118,7 @@ public class PlayerController : NetworkBehaviour, ICanTakeDamage
     public override void FixedUpdateNetwork()
     {
         base.FixedUpdateNetwork();
-       // CheckPing();
+        // CheckPing();
         CalculateCanvas();
         CalculateStatusDebuff();
         if (state != 2) animator.enabled = !playerStat.isBeingStun;
@@ -123,19 +126,21 @@ public class PlayerController : NetworkBehaviour, ICanTakeDamage
         {
             if (timeDie.RemainingTime(Runner) <= 0 || timeDie.ExpiredOrNotRunning(Runner))
             {
-                
+
                 playerStat.isLive = true;
                 state = 0;
                 playerStat.currentHealth = playerStat.maxHealth;
-                playerStat.currentMana=playerStat.maxMana;  
-                AnimatorSetBoolRPC("isLive",true);
+                playerStat.currentMana = playerStat.maxMana;
+                AnimatorSetBoolRPC("isLive", true);
                 statusCanvas.GetComponent<InviManager>().VisualOfPlayer(true);
+                statusCanvas.GetComponent<InviManager>().CharacterControllerActiveRPC(true);
                 playerScore.playersMakeDamages.Clear();
             }
             return;
         }
-        if (!playerStat.isBeingStun && (state==0 ||state ==5 ||state==1))
+        if (!playerStat.isBeingStun && (state == 0 || state == 5 || state == 1))
         {
+
             CalculateMove();
             CalculateJump();
         }
@@ -288,7 +293,8 @@ public class PlayerController : NetworkBehaviour, ICanTakeDamage
     #region Move
     void CalculateMove()
     {
-        if (HasStateAuthority /*&& playerID == Runner.GetPlayerUserId(Object.InputAuthority)*/)
+        if (gameManager == null) return;
+        if (HasStateAuthority && playerID == Runner.GetPlayerUserId(Object.InputAuthority))
         {
 
             moveDirection = new Vector3(moveInput.x, 0, moveInput.y);
@@ -298,9 +304,11 @@ public class PlayerController : NetworkBehaviour, ICanTakeDamage
             Quaternion look = Quaternion.AngleAxis(Camera.main.transform.rotation.eulerAngles.y, Vector3.up);
             if (moveDirection.magnitude > 0)
             {
+                
                 NoTeleAnyMore();
                 if (gameManager.state==GameState.InGame)
                 {
+                    
                     characterControllerPrototype.Move(look * moveDirection * speed * 0.015f
                 * playerStat.moveSpeed * (playerStat.isBeingSlow ? 0.3f : 1f) * Runner.DeltaTime);
                 }
@@ -316,6 +324,7 @@ public class PlayerController : NetworkBehaviour, ICanTakeDamage
                     {
                         characterControllerPrototype.Move(look * moveDirection * speed * 0.015f
                 * playerStat.moveSpeed * (playerStat.isBeingSlow ? 0.3f : 1f) * Runner.DeltaTime);
+                        
                     }
                 }
             
@@ -612,7 +621,8 @@ public class PlayerController : NetworkBehaviour, ICanTakeDamage
     public IEnumerator DelayHideVisualWhenDie ()
     {
         yield return new WaitForSeconds(3f);
-        statusCanvas.GetComponent<InviManager>().VisualOfPlayer(playerStat.isLive);
+        statusCanvas.GetComponent<InviManager>().VisualOfPlayer(false);
+        statusCanvas.GetComponent<InviManager>().CharacterControllerActiveRPC(false);
         if (HasStateAuthority)
         {
             SpawnAtStartPos();
